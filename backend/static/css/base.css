@@ -1,0 +1,79 @@
+/* ===========================
+   Tailwind Directives
+   =========================== */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===========================
+   Custom Global Styles
+   =========================== */
+
+/* Body defaults */
+body {
+  font-family: system-ui, sans-serif;
+  background-color: #f9fafb; /* light gray background */
+  color: #111827; /* dark text */
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+/* Links */
+a {
+  color: #1d4ed8; /* Tailwind blue-700 */
+  text-decoration: none;
+  transition: color 0.2s;
+}
+a:hover {
+  color: #2563eb; /* Tailwind blue-600 */
+}
+
+/* Buttons */
+button {
+  @apply px-4 py-2 rounded bg-blue-600 text-white font-semibold;
+  transition: background-color 0.2s;
+}
+button:hover {
+  @apply bg-blue-700;
+}
+
+/* Containers */
+.container {
+  @apply max-w-7xl mx-auto px-4;
+}
+
+/* Forms */
+input,
+textarea,
+select {
+  @apply border border-gray-300 rounded px-3 py-2 w-full focus:outline-none focus:ring-2 focus:ring-blue-500;
+  font-size: 1rem;
+}
+
+/* Utility classes (optional custom ones) */
+.text-primary {
+  color: #1d4ed8; /* Tailwind blue-700 */
+}
+.bg-primary {
+  background-color: #1d4ed8;
+  color: white;
+}
+
+.bookcover {
+  height: 300px;
+  width: auto;
+}

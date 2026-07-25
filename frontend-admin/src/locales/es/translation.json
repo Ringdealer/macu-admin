@@ -1,0 +1,377 @@
+{
+  "sidebar.dashboard": "Panel",
+  "sidebar.orders": "Pedidos",
+  "sidebar.customers": "Clientes",
+  "sidebar.products": "Productos",
+  "sidebar.logout": "Cerrar sesión",
+
+  "dashboard.title": "Panel de Administración",
+
+  "dashboard.kpi.totalOrders": "Total de pedidos",
+  "dashboard.kpi.pending": "Pendientes",
+  "dashboard.kpi.totalRevenue": "Ingresos totales",
+
+  "dashboard.alert.pendingMany": "Alerta: muchos pedidos pendientes",
+  "dashboard.alert.noAlerts": "Sin alertas",
+  "dashboard.alert.activeThreshold": "Alerta activa si > 1 pedido",
+
+  "dashboard.revenue.today": "Hoy",
+  "dashboard.revenue.week": "Semana",
+  "dashboard.revenue.month": "Mes",
+
+  "dashboard.charts.ordersTrend": "Tendencia de pedidos e ingresos",
+  "dashboard.charts.orderStatus": "Estado de pedidos",
+  "dashboard.charts.newCustomers": "Nuevos clientes",
+
+  "dashboard.stock.lowStock": "Alertas de stock bajo",
+  "dashboard.stock.available": "Disponible",
+
+  "dashboard.products.topSelling": "Productos más vendidos",
+  "dashboard.products.sold": "vendidos",
+
+  "dashboard.common.stock": "stock",
+  "dashboard.common.unknown": "Desconocido",
+
+  "dashboard.analytics.vs24h": "vs 24h",
+
+  "orders.title": "Pedidos",
+
+  "orders.filter.allStatus": "Todos los estados",
+  "orders.filter.allPayments": "Todos los pagos",
+
+  "orders.status.pending": "Pendiente",
+  "orders.status.confirmed": "Confirmado",
+  "orders.status.packed": "Empacado",
+  "orders.status.shipped": "Enviado",
+  "orders.status.in_transit": "En tránsito",
+  "orders.status.delivered": "Entregado",
+  "orders.status.returned": "Devuelto",
+  "orders.status.cancelled": "Cancelado",
+
+  "orders.payment.unpaid": "No pagado",
+  "orders.payment.paid": "Pagado",
+  "orders.payment.failed": "Fallido",
+
+  "orders.table.order": "Pedido",
+  "orders.table.customer": "Cliente",
+  "orders.table.total": "Total",
+  "orders.table.status": "Estado",
+  "orders.table.payment": "Pago",
+  "orders.table.date": "Fecha",
+  "orders.table.actions": "Acciones",
+
+  "orders.actions.view": "Ver detalles",
+  "orders.actions.whatsapp": "WhatsApp",
+
+  "orders.modal.title": "Pedido",
+  "orders.modal.customer": "Cliente",
+  "orders.modal.status": "Estado",
+  "orders.modal.payment": "Pago",
+  "orders.modal.phone": "Teléfono",
+  "orders.modal.address": "Dirección",
+  "orders.modal.close": "Cerrar",
+  "orders.modal.save": "Guardar",
+
+  "orders.timeline": "Línea de tiempo del pedido",
+  "orders.notifications": "Historial de notificaciones",
+  "orders.notes": "Notas del administrador",
+
+  "orders.notes.title": "Notas del administrador",
+  "orders.notes.empty": "Sin notas",
+  "orders.notes.placeholder": "Escribir nota interna...",
+  "orders.notes.add": "Añadir nota",
+
+  "orders.timeline.pending": "Pendiente",
+  "orders.timeline.confirmed": "Confirmado",
+  "orders.timeline.packed": "Empacado",
+  "orders.timeline.shipped": "Enviado",
+  "orders.timeline.in_transit": "En tránsito",
+  "orders.timeline.delivered": "Entregado",
+  "orders.timeline.returned": "Devuelto",
+  "orders.timeline.cancelled": "Cancelado",
+  "products.title": "Productos",
+  "products.new": "Nuevo Producto",
+  "products.edit": "Editar Producto",
+  "products.save": "Guardar producto",
+  "products.delete": "Eliminar",
+  "products.history": "Historial",
+  "products.close": "Cerrar",
+  "products.cancel": "Cancelar",
+
+  "products.deleteConfirm": "¿Eliminar este producto?",
+
+  "products.table.name": "Nombre",
+  "products.table.price": "Precio",
+  "products.table.stock": "Stock",
+  "products.table.reserved": "Reservado",
+  "products.table.available": "Disponible",
+  "products.table.image": "Imagen",
+  "products.table.actions": "Acciones",
+
+  "products.form.basicInfo": "Información básica",
+  "products.form.productName": "Nombre del producto",
+  "products.form.category": "Categoría",
+  "products.form.noCategory": "Sin categoría",
+  "products.form.description": "Descripción",
+  "products.form.characteristics": "Características",
+  "products.form.originCountry": "País de origen",
+  "products.form.price": "Precio",
+  "products.form.stock": "Stock",
+  "products.form.image": "Imagen del producto",
+
+  "products.validation.priceMin": "El precio debe ser mayor o igual a 0",
+  "products.validation.stockMin": "El stock debe ser mayor o igual a 0",
+
+  "products.historyModal.title": "Historial de stock",
+  "products.historyModal.date": "Fecha",
+  "products.historyModal.change": "Cambio",
+  "products.historyModal.type": "Tipo",
+  "products.historyModal.audit": "Auditoría",
+
+  "products.form.chooseImage": "Ninguna imagen seleccionada",
+  "products.form.browse": "Buscar",
+  "products.form.imageSelected": "Imagen seleccionada",
+
+  "customers.title": "Clientes",
+  "customers.total": "Total",
+  "customers.new": "Nuevo Cliente",
+  "customers.searchPlaceholder": "Buscar por nombre o correo...",
+
+  "customers.loading": "Cargando clientes...",
+  "customers.errorLoad": "Error al cargar los clientes",
+
+  "customers.create.title": "Nuevo Cliente",
+  "customers.create.cancel": "Cancelar",
+  "customers.create.create": "Crear",
+
+  "customers.validation.emailRequired": "El correo electrónico es obligatorio",
+  "customers.error.create": "Error al crear el cliente",
+
+  "customers.fields.name": "Nombre",
+  "customers.fields.email": "Correo electrónico",
+  "customers.fields.phone": "Teléfono",
+  "customers.fields.address": "Dirección",
+  "customers.fields.password": "Contraseña",
+  "customers.fields.verified": "Verificado",
+
+  "customers.edit": "Editar",
+  "customers.delete": "Eliminar",
+  "customers.save": "Guardar",
+  "customers.cancel": "Cancelar",
+
+  "customers.totalOrders": "Total de pedidos",
+  "customers.lastOrder": "Último pedido",
+  "customers.lifetimeValue": "Valor total del cliente",
+
+  "customers.filter.allStatus": "Todos los estados",
+  "customers.filter.allPayments": "Todos los pagos",
+
+  "customers.noOrders": "No hay pedidos",
+
+  "customers.deleteConfirm": "¿Eliminar este cliente?",
+
+  "pagination.previous": "Anterior",
+  "pagination.next": "Siguiente",
+  "pagination.page": "Página",
+
+  "orders.toast.updated": "Pedido actualizado correctamente",
+  "orders.toast.transitionNotAllowed": "Transición no permitida",
+  "orders.toast.loadError": "Error al cargar pedidos",
+
+  "products.toast.created": "Producto creado correctamente",
+  "products.toast.updated": "Producto actualizado correctamente",
+  "products.toast.createError": "Error al crear producto",
+  "products.toast.updateError": "Error al actualizar producto",
+  "products.toast.loadError": "Error al cargar productos",
+  "products.toast.deleted": "Producto eliminado correctamente",
+  "products.toast.deleteError": "Error al eliminar producto",
+
+  "customers.toast.created": "Cliente creado correctamente",
+  "customers.toast.updated": "Cliente actualizado correctamente",
+  "customers.toast.deleted": "Cliente eliminado correctamente",
+  "customers.toast.createError": "Error al crear cliente",
+  "customers.toast.updateError": "Error al actualizar cliente",
+  "customers.toast.deleteError": "Error al eliminar cliente",
+
+  "customers.validation.nameRequired": "El nombre es obligatorio",
+  "customers.validation.phoneRequired": "El teléfono es obligatorio",
+  "customers.validation.passwordRequired": "La contraseña es obligatoria",
+
+  "customers.verified.yes": "Sí",
+  "customers.verified.no": "No",
+
+  "products.sort.name": "Nombre",
+  "products.sort.price": "Precio",
+  "products.sort.stock": "Stock",
+  "products.search": "Buscar productos",
+
+  "categories.title": "Categorías",
+  "categories.manage": "Gestionar categorías",
+  "categories.hide": "Ocultar Categorías",
+  "categories.new": "Nueva categoría",
+  "categories.edit": "Editar categoría",
+  "categories.delete": "Eliminar categoría",
+  "categories.name": "Nombre",
+  "categories.search": "Buscar categorías...",
+  "categories.createSuccess": "Categoría creada correctamente",
+  "categories.updateSuccess": "Categoría actualizada correctamente",
+  "categories.deleteSuccess": "Categoría eliminada correctamente",
+  "categories.errorLoad": "Error al cargar categorías",
+  "categories.nameRequired": "El nombre de la categoría es obligatorio",
+  "categories.deleteConfirm": "¿Seguro que deseas eliminar esta categoría?",
+
+  "common.none": "Ninguno",
+  "common.edit": "Editar",
+  "common.delete": "Eliminar",
+  "common.cancel": "Cancelar",
+
+  "dashboard.analytics.orders": "Pedidos",
+  "dashboard.analytics.revenue": "Ingresos",
+  "dashboard.analytics.all": "Todos",
+
+  "dashboard.charts.productSalesTrend": "Tendencia de ventas por producto",
+
+  "products.available": "Disponible",
+  "products.unavailable": "No disponible",
+  "products.noCategory": "Sin categoría",
+
+  "products.table.category": "Categoría",
+  "products.table.parentCategory": "Grupo de Categorías",
+
+  "categories.noParent": "Sin grupo de categoría (nivel superior)",
+  "categories.isGroup": "Crear como grupo de categorías",
+  "categories.selectGroup": "Elegir grupo de categoría padre",
+
+  "dashboard.charts.topSellingProducts": "Productos más Vendidos",
+  "dashboard.charts.categoryPerformance": "Rendimiento por Categoría",
+
+  "dashboard.charts.revenueByCategory": "Ingresos por Categoría",
+  "dashboard.filters.year": "Año",
+  "dashboard.filters.month": "Mes",
+  "dashboard.filters.week": "Semana",
+
+  "dashboard.charts.categoryRevenueOverTime": "Ingresos por Categoría en el Tiempo",
+
+  "dashboard.categoryAnalytics": "Análisis por Categorías",
+
+  "dashboard.view.bar": "Ingresos por Categoría",
+  "dashboard.view.stacked": "Ingresos en el Tiempo",
+  "dashboard.view.both": "Ambos",
+
+  "dashboard.categoryView.bar": "📊 Ingresos por Categoría",
+  "dashboard.categoryView.stacked": "📈 Evolución de Ingresos",
+  "dashboard.categoryView.both": "🔀 Ambas",
+
+  "dashboard.topProducts.title": "Productos Más Vendidos",
+  "dashboard.topProducts.period.year": "Año",
+  "dashboard.topProducts.period.month": "Mes",
+  "dashboard.topProducts.period.week": "Semana",
+
+  "dashboard.topProducts.periodLabel.year": "Año",
+  "dashboard.topProducts.periodLabel.month": "Mes",
+  "dashboard.topProducts.periodLabel.week": "Semana",
+
+  "dashboard.period.year": "Año {{year}}",
+  "dashboard.period.month": "{{month}} {{year}}",
+  "dashboard.period.week": "{{start}} - {{end}}",
+
+  "dashboard.period.yearLabel": "Año {{year}}",
+  "dashboard.period.monthLabel": "{{month}} de {{year}}",
+  "dashboard.period.weekLabel": "{{start}} - {{end}}",
+
+  "dashboard.categories": "Categorías",
+  "dashboard.all": "Todas",
+
+  "dashboard.unitsSold": "Unidades vendidas",
+  "dashboard.product": "Producto",
+
+  "dashboard.charts.productCategorySales": "Historia de ventas por subcategorías de productos",
+  "dashboard.products": "Productos",
+
+  "dashboard.noData": "Sin datos disponibles",
+
+  "topProducts.modes.current": "Actual",
+  "topProducts.modes.delta": "Cambio vs anterior",
+  "topProducts.modes.percent": "Crecimiento %",
+
+  "sidebar.publicSite": "Sitio público",
+
+  "auth.adminLoginTitle": "Inicio de sesión de administrador",
+  "auth.adminLoginSubtitle": "Acceso al panel de administración",
+
+  "auth.usernameOrEmail": "Usuario o correo electrónico",
+  "auth.usernameOrEmailPlaceholder": "Introduce usuario o correo",
+
+  "auth.password": "Contraseña",
+  "auth.passwordPlaceholder": "Introduce contraseña",
+
+  "auth.loginButton": "Iniciar sesión",
+  "auth.loggingIn": "Iniciando sesión...",
+
+  "auth.loginError": "Credenciales inválidas o no eres administrador",
+
+  "auth.onlyAuthorized": "Solo personal autorizado",
+
+  "dashboard.exportPdf": "Exportar PDF",
+
+  "dashboard.exportingPdf": "Generando PDF...",
+
+  "dashboard.exportPdfShort": "A PDF",
+
+  "dashboard.noSales": "No hay datos de ventas disponibles",
+  "dashboard.nosalesDescription": "La información de ventas aparecerá aquí cuando existan transacciones.",
+  "dashboard.noTopProducts": "No hay productos más vendidos disponibles.",
+  "dashboard.noActivity": "No hay actividad registrada",
+  "dashboard.noNotifications": "Sin notificaciones",
+  "orders.noOrders": "No se encontraron pedidos",
+  "customers.noCustomers": "No se encontraron clientes",
+  "customers.notFound": "Cliente no encontrado",
+  "products.noProducts": "No hay productos disponibles",
+  "products.noSearchResults": "No hay productos que coincidan con la búsqueda",
+  "products.historyModal.empty": "No hay movimientos de inventario",
+  "dashboard.stock.noLowStock": "No hay alerta de productos casi agotados",
+
+  "common.close": "Cerrar",
+   "common.loading": "Cargando...",
+
+   "dashboard.category" : "Categoría",
+  "dashboard.revenue" : "Ingresos",
+
+  "sidebar.expand": "Expandir barra lateral",
+"sidebar.collapse": "Contraer barra lateral",
+"customers.filter.status": "Filtrar pedidos por estado",
+"customers.filter.payment": "Filtrar pedidos por estado del pago",
+
+"dashboard.actions.lightMode": "Cambiar al modo claro",
+"dashboard.actions.darkMode": "Cambiar al modo oscuro",
+
+"sidebar.darkMode": "Modo oscuro",
+"sidebar.lightMode": "Modo claro",
+
+
+  "orders.notes.edit": "Editar nota",
+  "orders.notes.delete": "Eliminar nota",
+  "orders.notes.save": "Guardar cambios",
+  "orders.notes.cancel": "Cancelar",
+  "orders.notes.deleteConfirm": "¿Está seguro de eliminar esta nota?",
+  "orders.notes.updated": "Nota actualizada correctamente",
+  "orders.notes.deleted": "Nota eliminada correctamente",
+
+  "orders.notes.deleting": "Eliminando nota...", 
+  "orders.notes.confirmDelete" : "Confirmar",
+
+  "orders.notes.created" : "Nota creada",
+  "orders.notes.createError" : "Error: nota no creada",
+
+  "dashboard.pdf.desktopOnly": "La exportación a PDF sólo PC",
+
+  "dashboard.charts.categorySales": "Ventas históricas por subcategoría",
+  "dashboard.charts.categorySalesDescription": "Distribución de unidades vendidas desde el inicio de las ventas.",
+  
+  "dashboard.subcategory": "Subcategoría",
+
+  "products.searchPlaceholder": "Buscar por nombre o categoría...",
+
+  "orders.searchPlaceholder": "Buscar pedidos..."
+
+}

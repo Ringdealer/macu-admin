@@ -1,0 +1,81 @@
+{% load static i18n %}
+<!DOCTYPE html>
+<html lang="{{ LANGUAGE_CODE }}">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Macu{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/output.css' %}">
+</head>
+
+<body class="bg-gray-100 min-h-screen flex flex-col">
+<div class="flex-row">
+<!-- NAVBAR -->
+<nav class="bg-white shadow-md p-4">
+  <div class="max-w-7xl mx-auto flex justify-between items-center">
+
+    <!-- Brand -->
+    <a href="{% url 'home' %}" class="font-bold text-xl mr-8">
+      MACU Movimiento Abastecimiento Confianza Unión
+    </a>
+
+    <!-- Navigation Links -->
+    <div class="max-w-7xl mx-auto flex items-center px-24 space-x-10">
+
+      <a href="{% url 'about' %}" class="hover:text-blue-600">
+        {% trans "About" %}
+      </a>
+
+      <a href="{% url 'products-list' %}" class="hover:text-blue-600">
+        {% trans "Productos" %}
+      </a>
+
+      <a href="{% url 'orders-list' %}" class="hover:text-blue-600">
+        {% trans "Pedidos" %}
+      </a>
+
+      {% if user.is_authenticated %}
+        <span class="text-gray-700">
+          {% trans "Hola" %} {{ user.email }}!
+        </span>
+        <a href="{% url 'account_logout' %}" class="hover:text-blue-600 ml-4">
+          {% trans "Cerrar Sesión" %}
+        </a>
+      {% else %}
+        <a href="{% url 'account_login' %}" class="hover:text-blue-600">
+          {% trans "Iniciar Sesión" %}
+        </a>
+
+        <a href="{% url 'account_signup' %}"
+           class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">
+          {% trans "Registrarse" %}
+        </a>
+      {% endif %}
+
+      <!-- Language Switcher -->
+      <form action="{% url 'set_language' %}" method="post" class="inline">
+        {% csrf_token %}
+        <select name="language" onchange="this.form.submit()" class="border rounded px-2 py-1">
+            {% get_current_language as LANGUAGE_CODE %}
+            {% get_available_languages as LANGUAGES %}
+            {% for code, name in LANGUAGES %}
+                <option value="{{ code }}" {% if code == LANGUAGE_CODE %}selected{% endif %}>
+                    {{ name }}
+                </option>
+            {% endfor %}
+        </select>
+      </form>
+
+    </div>
+  </div>
+</nav>
+
+<!-- PAGE CONTENT -->
+<main class="flex-grow container mx-auto mt-10 px-4">
+    {% block content %}
+    {% endblock %}
+</main>
+
+<script src="{% static 'js/base.js' %}"></script>
+</div>
+</body>
+</html>

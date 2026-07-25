@@ -1,0 +1,133 @@
+[
+{
+    "model": "products.category",
+    "pk": 1,
+    "fields": {
+        "name": "Electronics"
+    }
+},
+{
+    "model": "products.category",
+    "pk": 2,
+    "fields": {
+        "name": "Food"
+    }
+},
+{
+    "model": "products.category",
+    "pk": 3,
+    "fields": {
+        "name": "ArtÝculos de Vestir"
+    }
+},
+{
+    "model": "products.category",
+    "pk": 4,
+    "fields": {
+        "name": "Bebidas"
+    }
+},
+{
+    "model": "products.category",
+    "pk": 5,
+    "fields": {
+        "name": "Arte"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 1,
+    "fields": {
+        "uuid": "4f061de3-62f0-46ac-bfcc-6c0f32d7ac47",
+        "name": "Laptop",
+        "description": "Dell",
+        "price": "1500.00",
+        "category": 1,
+        "stock": 3,
+        "available": true,
+        "created_at": "2026-03-05T21:27:42Z",
+        "updated_at": "2026-03-09T20:53:14.864Z",
+        "image": "products/laptop.jpg"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 2,
+    "fields": {
+        "uuid": "c70fb9bf-c998-4c98-800e-d30a579942d4",
+        "name": "Arroz",
+        "description": "Arroz vietnamita",
+        "price": "1.65",
+        "category": 2,
+        "stock": 23,
+        "available": true,
+        "created_at": "2026-03-05T21:28:19Z",
+        "updated_at": "2026-03-09T20:52:53.295Z",
+        "image": "products/arroz.jpg"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 3,
+    "fields": {
+        "uuid": "2ac4addf-9d0d-40b1-a132-99c3babc3b52",
+        "name": "Maui Jim",
+        "description": "Gafas de Sol Supercromßticas Sensibles al Peligro Joo Janta 200",
+        "price": "120.00",
+        "category": 3,
+        "stock": 7,
+        "available": true,
+        "created_at": "2026-03-05T21:28:56Z",
+        "updated_at": "2026-03-14T16:42:13.415Z",
+        "image": "products/ray.webp"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 4,
+    "fields": {
+        "uuid": "e5bd67ad-0c93-41a9-bcc7-4671b270d750",
+        "name": "BacardÝ",
+        "description": "Ron",
+        "price": "60.20",
+        "category": 4,
+        "stock": 32,
+        "available": true,
+        "created_at": "2026-03-05T21:29:48Z",
+        "updated_at": "2026-03-09T20:52:40.015Z",
+        "image": "products/Bacardi.webp"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 5,
+    "fields": {
+        "uuid": "90223e6d-b49d-4738-8088-b1438659a765",
+        "name": "Pincel",
+        "description": "Pinceles para acuarela",
+        "price": "20.00",
+        "category": 5,
+        "stock": 12,
+        "available": true,
+        "created_at": "2026-03-05T21:30:26Z",
+        "updated_at": "2026-03-09T21:04:00.506Z",
+        "image": "products/watercolor.avif"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 6,
+    "fields": {
+        "uuid": "38c4e702-ca29-47d1-9aa9-ea549619cf21",
+        "name": "Sunflower Oil",
+        "description": "Oil for cooking",
+        "price": "9.50",
+        "category": 2,
+        "stock": 31,
+        "available": true,
+        "created_at": "2026-03-06T18:46:51Z",
+        "updated_at": "2026-03-09T21:03:44.192Z",
+        "image": "products/sunflower.webp"
+    }
+}
+]

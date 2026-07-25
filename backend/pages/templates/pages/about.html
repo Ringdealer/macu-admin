@@ -1,0 +1,21 @@
+{% extends "_base.html" %}
+{% load static %}
+{% load i18n %}  {# Added for translations #}
+
+{% block title %}{% trans "Acerca de" %}{% endblock title %}
+
+{% block content %}
+
+<h1 class="text-3xl font-bold text-center">
+    {% trans "Somos una empresa con más de 10 años de experiencia." %}
+</h1>
+
+<h1 class="text-3xl font-bold text-center">
+    {% trans "Solicite su artículo sin crédito adelantado." %}
+</h1>
+
+<img class="w-full max-w-3xl rounded-lg shadow-md"
+       src="{% static 'images/marazul.jpg' %}"
+       alt="{% trans 'Buque' %}">
+
+{% endblock content %}

@@ -1,0 +1,57 @@
+# =====================
+# Environment variables
+# =====================
+.env
+.env.*
+!.env.example
+
+# =====================
+# Python
+# =====================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+
+# =====================
+# Virtual environments
+# =====================
+.venv/
+venv/
+env/
+
+# =====================
+# Django
+# =====================
+db.sqlite3
+media/
+backend/media/
+staticfiles/
+
+# =====================
+# OS / Editor
+# =====================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# =====================
+# Docker
+# =====================
+postgres_data/
+
+# =====================
+# React
+# =====================
+node_modules/
+frontend-admin/.vite/
+frontend-admin/dist/
+
+# =====================
+# Other files
+# =====================
+generate_project_summary.py
+project_summary.json
+backend/experiment.html

@@ -1,0 +1,20 @@
+{% extends "_base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Productos" %}{% endblock %}
+
+{% block content %}
+<h1 class="text-2xl font-bold mb-4">{% trans "Productos Disponibles" %}</h1>
+
+<ul>
+    {% for product in products %}
+        <li>
+            <a href="{% url 'products-detail' product.uuid %}" class="hover:text-blue-600">
+                {{ product.name }}
+            </a> - {% trans "Categoría" %}: {{ product.category.name }}
+        </li>
+    {% empty %}
+        <li>{% trans "No hay productos disponibles." %}</li>
+    {% endfor %}
+</ul>
+{% endblock %}

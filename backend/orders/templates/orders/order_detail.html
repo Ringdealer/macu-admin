@@ -1,0 +1,16 @@
+{% extends "_base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Pedido" %} #{{ order.id }}{% endblock %}
+
+{% block content %}
+<h1 class="text-2xl font-bold mb-4">{% trans "Pedido" %} #{{ order.id }}</h1>
+<p><strong>{% trans "Cliente" %}:</strong> {{ order.customer }}</p>
+<p><strong>{% trans "Estado" %}:</strong> {{ order.status }}</p>
+<p><strong>{% trans "Productos" %}:</strong></p>
+<ul>
+    {% for item in order.order_items.all %}
+        <li>{{ item.quantity }} x {{ item.product.name }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}

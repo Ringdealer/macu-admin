@@ -1,0 +1,28 @@
+# render.yaml — macu_platform deployment configuration
+
+services:
+  - type: web
+    name: macu-platform
+    env: docker
+    repo: https://github.com/ringdealer/macu_platform  # change to your GitHub repo
+    branch: main                                       # or your main branch
+    dockerfilePath: Dockerfile                # path to Dockerfile
+    plan: starter                                     # free plan
+    envVars:
+      - key: SECRET_KEY
+        value: "REPLACE_WITH_SECRET_KEY"
+      - key: DEBUG
+        value: "False"
+      - key: ALLOWED_HOSTS
+        value: "macu-platform.onrender.com"
+      - key: DATABASE_URL
+        fromDatabase:
+          name: macu-db
+          property: connectionString
+
+databases:
+  - name: macu-db
+    engine: postgresql
+    plan: free                                      # free plan
+    region: oregon                                  # choose closest region
+    # Username, password, and DB name will be auto-generated

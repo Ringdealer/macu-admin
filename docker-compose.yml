@@ -1,0 +1,69 @@
+#root/docker-compose.yml
+#version: "3.9"
+
+services:
+
+  db:
+    image: postgres:15
+    container_name: macu_db
+    restart: always
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    ports:
+      - "5432:5432"
+    networks:
+      - macu_network
+
+  backend:
+    build:
+      context: .
+      dockerfile: Docker/backend.Dockerfile
+    container_name: macu_backend
+    command: >
+      sh -c "
+      python manage.py migrate &&
+      python manage.py collectstatic --noinput &&
+      gunicorn config.wsgi:application --bind 0.0.0.0:8000
+      "
+    volumes:
+      - ./backend:/app
+      - ./backend/static:/app/static
+      - ./backend/media:/app/media
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    depends_on:
+      - db
+    networks:
+      - macu_network
+
+  frontend:
+    build:
+      context: .
+      dockerfile: Docker/frontend.Dockerfile
+      args:
+        # Build-time argument, Vite reads this at build
+        VITE_API_URL: http://macu_backend:8000 # new
+    container_name: macu_frontend
+    environment:
+      # Runtime env, in case frontend uses it dynamically
+      VITE_API_URL: http://macu_backend:8000 # new
+    ports:
+      - "5173:80" # map container port 80 to host 5173 (dev) or 80 for production
+    depends_on:
+      - backend
+    networks:
+      - macu_network
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
+
+networks:
+  macu_network:
+    driver: bridge

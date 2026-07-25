@@ -1,0 +1,25 @@
+{% extends "_base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Crear Pedido" %}{% endblock %}
+
+{% block content %}
+<h1 class="text-2xl font-bold mb-4">{% trans "Crear Nuevo Pedido" %}</h1>
+
+<form method="post">
+    {% csrf_token %}
+    
+    {{ form.as_p }}
+    {{ formset.management_form }}
+
+    {% for item_form in formset %}
+        <div class="mb-4 border p-3 rounded">
+            {{ item_form.as_p }}
+        </div>
+    {% endfor %}
+
+    <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
+        {% trans "Enviar Pedido" %}
+    </button>
+</form>
+{% endblock %}

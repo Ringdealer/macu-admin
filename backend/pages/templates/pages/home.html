@@ -1,0 +1,30 @@
+{% extends "_base.html" %}
+{% load static %}
+{% load i18n %}  {# Added for translations #}
+
+{% block title %}{% trans "Inicio" %}{% endblock %}
+
+{% block content %}
+<div class="flex-row items-center space-y-4">
+  <!-- Main Image -->
+  <img class="w-64 h-48 object-cover"
+       src="{% static 'images/buque.jpg' %}"
+       alt="{% trans 'Buque' %}">
+
+  <!-- Heading -->
+  <h1 class="text-3xl font-bold text-center">
+    {% trans "Bienvenidos a MACU" %}
+  </h1>
+
+  <!-- Conditional Paragraph -->
+  {% if user.is_authenticated %}
+    <p class="text-gray-700 text-center">
+      {% trans "You are logged in and ready to use the platform." %}
+    </p>
+  {% else %}
+    <p class="text-gray-700 text-center">
+      {% trans "Por favor cree una cuenta para continuar" %}
+    </p>
+  {% endif %}
+</div>
+{% endblock %}

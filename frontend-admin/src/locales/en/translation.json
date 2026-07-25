@@ -1,0 +1,382 @@
+{
+  "sidebar.dashboard": "Dashboard",
+  "sidebar.orders": "Orders",
+  "sidebar.customers": "Customers",
+  "sidebar.products": "Products",
+  "sidebar.logout": "Logout",
+
+  "dashboard.title": "Admin Dashboard",
+
+  "dashboard.kpi.totalOrders": "Total Orders",
+  "dashboard.kpi.pending": "Pending",
+  "dashboard.kpi.totalRevenue": "Total Revenue",
+
+  "dashboard.alert.pendingMany": "Alert: many pending orders",
+  "dashboard.alert.noAlerts": "No alerts",
+  "dashboard.alert.activeThreshold": "Alert active if > 1 order",
+
+  "dashboard.revenue.today": "Today",
+  "dashboard.revenue.week": "Week",
+  "dashboard.revenue.month": "Month",
+
+  "dashboard.charts.ordersTrend": "Orders and Revenue Trend",
+  "dashboard.charts.orderStatus": "Order Status",
+  "dashboard.charts.newCustomers": "New Customers",
+
+  "dashboard.stock.lowStock": "Low Stock Alerts",
+  "dashboard.stock.available": "Available",
+
+  "dashboard.products.topSelling": "Top Selling Products",
+  "dashboard.products.sold": "sold",
+
+  "dashboard.common.stock": "stock",
+  "dashboard.common.unknown": "Unknown",
+
+  "dashboard.analytics.vs24h": "vs 24h",
+
+  "orders.title": "Orders",
+
+  "orders.filter.allStatus": "All statuses",
+  "orders.filter.allPayments": "All payments",
+
+  "orders.status.pending": "Pending",
+  "orders.status.confirmed": "Confirmed",
+  "orders.status.packed": "Packed",
+  "orders.status.shipped": "Shipped",
+  "orders.status.in_transit": "In transit",
+  "orders.status.delivered": "Delivered",
+  "orders.status.returned": "Returned",
+  "orders.status.cancelled": "Cancelled",
+
+  "orders.payment.unpaid": "Unpaid",
+  "orders.payment.paid": "Paid",
+  "orders.payment.failed": "Failed",
+
+  "orders.table.order": "Order",
+  "orders.table.customer": "Customer",
+  "orders.table.total": "Total",
+  "orders.table.status": "Status",
+  "orders.table.payment": "Payment",
+  "orders.table.date": "Date",
+  "orders.table.actions": "Actions",
+
+  "orders.actions.view": "View details",
+  "orders.actions.whatsapp": "WhatsApp",
+
+  "orders.modal.title": "Order",
+  "orders.modal.customer": "Customer",
+  "orders.modal.status": "Status",
+  "orders.modal.payment": "Payment",
+  "orders.modal.phone": "Phone",
+  "orders.modal.address": "Address",
+  "orders.modal.close": "Close",
+  "orders.modal.save": "Save",
+
+  "orders.timeline": "Order Timeline",
+  "orders.notifications": "Notification History",
+  "orders.notes": "Admin Notes",
+
+  "orders.notes.title": "Admin Notes",
+  "orders.notes.empty": "No notes",
+  "orders.notes.placeholder": "Write internal note...",
+  "orders.notes.add": "Add note",
+
+  "orders.timeline.pending": "Pending",
+  "orders.timeline.confirmed": "Confirmed",
+  "orders.timeline.packed": "Packed",
+  "orders.timeline.shipped": "Shipped",
+  "orders.timeline.in_transit": "In transit",
+  "orders.timeline.delivered": "Delivered",
+  "orders.timeline.returned": "Returned",
+  "orders.timeline.cancelled": "Cancelled",
+  "products.title": "Products",
+  "products.new": "New Product",
+  "products.edit": "Edit Product",
+  "products.save": "Save Product",
+  "products.delete": "Delete",
+  "products.history": "History",
+  "products.close": "Close",
+  "products.cancel": "Cancel",
+
+  "products.deleteConfirm": "Delete this product?",
+
+  "products.table.name": "Name",
+  "products.table.price": "Price",
+  "products.table.stock": "Stock",
+  "products.table.reserved": "Reserved",
+  "products.table.available": "Available",
+  "products.table.image": "Image",
+  "products.table.actions": "Actions",
+
+  "products.form.basicInfo": "Basic Information",
+  "products.form.productName": "Product Name",
+  "products.form.category": "Category",
+  "products.form.noCategory": "No category",
+  "products.form.description": "Description",
+  "products.form.characteristics": "Characteristics",
+  "products.form.originCountry": "Country of origin",
+  "products.form.price": "Price",
+  "products.form.stock": "Stock",
+  "products.form.image": "Product image",
+
+  "products.validation.priceMin": "Price must be greater than or equal to 0",
+  "products.validation.stockMin": "Stock must be greater than or equal to 0",
+
+  "products.historyModal.title": "Stock history",
+  "products.historyModal.date": "Date",
+  "products.historyModal.change": "Change",
+  "products.historyModal.type": "Type",
+  "products.historyModal.audit": "Audit",
+
+  "products.form.chooseImage": "No image selected",
+  "products.form.browse": "Browse",
+  "products.form.imageSelected": "Image selected",
+
+  "customers.title": "Customers",
+  "customers.total": "Total",
+  "customers.new": "New Customer",
+  "customers.searchPlaceholder": "Search by name or email...",
+
+  "customers.loading": "Loading customers...",
+  "customers.errorLoad": "Error loading customers",
+
+  "customers.create.title": "New Customer",
+  "customers.create.cancel": "Cancel",
+  "customers.create.create": "Create",
+
+  "customers.validation.emailRequired": "Email is required",
+  "customers.error.create": "Error creating customer",
+
+  "customers.fields.name": "Name",
+  "customers.fields.email": "Email",
+  "customers.fields.phone": "Phone",
+  "customers.fields.address": "Address",
+  "customers.fields.password": "Password",
+  "customers.fields.verified": "Verified",
+  "customers.edit": "Edit",
+  "customers.delete": "Delete",
+  "customers.save": "Save",
+  "customers.cancel": "Cancel",
+
+  "customers.totalOrders": "Total orders",
+  "customers.lastOrder": "Last order",
+  "customers.lifetimeValue": "Customer lifetime value",
+
+  "customers.filter.allStatus": "All statuses",
+  "customers.filter.allPayments": "All payments",
+
+  "customers.noOrders": "No orders found",
+
+  "customers.deleteConfirm": "Delete this customer?",
+
+  "pagination.previous": "Previous",
+  "pagination.next": "Next",
+  "pagination.page": "Page",
+
+  "orders.toast.updated": "Order updated successfully",
+  "orders.toast.transitionNotAllowed": "Transition not allowed",
+  "orders.toast.loadError": "Error loading orders",
+
+  "products.toast.created": "Product created successfully",
+  "products.toast.updated": "Product updated successfully",
+  "products.toast.createError": "Error creating product",
+  "products.toast.updateError": "Error updating product",
+  "products.toast.loadError": "Error loading products",
+  "products.toast.deleted": "Product deleted successfully",
+  "products.toast.deleteError": "Error deleting product",
+
+  "customers.toast.created": "Customer created successfully",
+  "customers.toast.updated": "Customer updated successfully",
+  "customers.toast.deleted": "Customer deleted successfully",
+  "customers.toast.createError": "Error creating customer",
+  "customers.toast.updateError": "Error updating customer",
+  "customers.toast.deleteError": "Error deleting customer",
+
+  "customers.validation.nameRequired": "Name is required",
+  "customers.validation.phoneRequired": "Phone is required",
+  "customers.validation.passwordRequired": "Password is required",
+
+  "customers.verified.yes": "Yes",
+  "customers.verified.no": "No",
+
+  "products.sort.name": "Name",
+  "products.sort.price": "Price",
+  "products.sort.stock": "Stock",
+  "products.search": "Search products",
+
+  "categories.title": "Categories",
+  "categories.manage": "Manage Categories",
+  "categories.hide": "Hide Categories",
+  "categories.new": "New Category",
+  "categories.edit": "Edit Category",
+  "categories.delete": "Delete Category",
+  "categories.name": "Name",
+  "categories.search": "Search categories...",
+  "categories.createSuccess": "Category created successfully",
+  "categories.updateSuccess": "Category updated successfully",
+  "categories.deleteSuccess": "Category deleted successfully",
+  "categories.errorLoad": "Failed to load categories",
+  "categories.nameRequired": "Category name is required",
+  "categories.deleteConfirm": "Are you sure you want to delete this category?",
+
+  "common.none": "None",
+  "common.edit": "Edit",
+  "common.delete": "Delete",
+  "common.cancel": "Cancel",
+
+  "dashboard.analytics.orders": "Orders",
+  "dashboard.analytics.revenue": "Revenue",
+  "dashboard.analytics.all": "All",
+
+  "dashboard.charts.productSalesTrend": "Product Sales Trend",
+
+  "products.available": "Available",
+  "products.unavailable": "Unavailable",
+  "products.noCategory": "No category",
+
+  "products.table.category": "Category",
+  "products.table.parentCategory": "Category Group",
+
+  "categories.noParent": "No category group (top level)",
+  "categories.isGroup": "Create as category group",
+  "categories.selectGroup": "Choose parent category group",
+
+  "dashboard.charts.topSellingProducts": "Top Selling Products",
+  "dashboard.charts.categoryPerformance": "Category Performance",
+
+  "dashboard.charts.revenueByCategory": "Revenue by Category",
+  "dashboard.filters.year": "Year",
+  "dashboard.filters.month": "Month",
+  "dashboard.filters.week": "Week",
+
+  "dashboard.charts.categoryRevenueOverTime": "Revenue by Category Over Time",
+
+  "dashboard.categoryAnalytics": "Category Analytics",
+
+  "dashboard.view.bar": "Category Revenue",
+  "dashboard.view.stacked": "Revenue Over Time",
+  "dashboard.view.both": "Both",
+
+  "dashboard.categoryView.bar": "📊 Category Revenue",
+  "dashboard.categoryView.stacked": "📈 Revenue Over Time",
+  "dashboard.categoryView.both": "🔀 Both",
+
+  "dashboard.topProducts.title": "Top Selling Products",
+  "dashboard.topProducts.period.year": "Year",
+  "dashboard.topProducts.period.month": "Month",
+  "dashboard.topProducts.period.week": "Week",
+
+  "dashboard.topProducts.periodLabel.year": "Year",
+  "dashboard.topProducts.periodLabel.month": "Month",
+  "dashboard.topProducts.periodLabel.week": "Week",
+
+  "dashboard.topProducts.range.year": "{{year}}",
+  "dashboard.topProducts.range.month": "{{month}} {{year}}",
+  "dashboard.topProducts.range.week": "{{start}} - {{end}}",
+
+  "dashboard.period.year": "Year {{year}}",
+  "dashboard.period.month": "{{month}} {{year}}",
+  "dashboard.period.week": "{{start}} - {{end}}",
+
+  "dashboard.period.yearLabel": "Year {{year}}",
+  "dashboard.period.monthLabel": "{{month}} {{year}}",
+  "dashboard.period.weekLabel": "{{start}} - {{end}}",
+
+  "dashboard.categories": "Categories",
+  "dashboard.all": "All",
+
+  "dashboard.unitsSold": "Units sold",
+  "dashboard.product": "Product",
+
+  "dashboard.charts.productCategorySales": "All-Time Sales by Subcategory",
+  "dashboard.products": "Products",
+
+  "dashboard.noData": "No data available",
+
+  "topProducts.modes.current": "Current",
+  "topProducts.modes.delta": "Change vs previous",
+  "topProducts.modes.percent": "Growth %",
+
+  "sidebar.publicSite": "Public Site",
+
+  "auth.adminLoginTitle": "Administrator login",
+  "auth.adminLoginSubtitle": "Access to the administration panel",
+
+  "auth.usernameOrEmail": "Username or email",
+  "auth.usernameOrEmailPlaceholder": "Enter username or email",
+
+  "auth.password": "Password",
+  "auth.passwordPlaceholder": "Enter password",
+
+  "auth.loginButton": "Sign in",
+  "auth.loggingIn": "Signing in...",
+
+  "auth.loginError": "Invalid credentials or not an admin user",
+
+  "auth.onlyAuthorized": "Authorized personnel only",
+
+  "dashboard.exportPdf": "Export PDF",
+
+  "dashboard.exportingPdf": "Generating PDF...",
+
+  "dashboard.exportPdfShort": "To PDF",
+
+  "dashboard.noSales": "No sales data available",
+  "dashboard.nosalesDescription": "Sales information will appear here once transactions are recorded.",
+  "dashboard.noTopProducts": "No top-selling products available",
+  "dashboard.noActivity": "No activity recorded",
+  "dashboard.noNotifications": "No notifications available",
+  "orders.noOrders": "No orders found",
+  "customers.noCustomers": "No customers found",
+  "customers.notFound": "Customer not found",
+  "products.noProducts": "No products available",
+  "products.noSearchResults": "No products match your search",
+  "products.historyModal.empty": "No stock movements found",
+
+  "dashboard.stock.noLowStock": "No low-stock products.",
+
+  "common.close": "Close",
+  "common.loading": "Loading...", 
+
+  "dashboard.category" : "Category",
+  "dashboard.revenue" : "Revenue",
+
+  "sidebar.expand": "Expand sidebar",
+"sidebar.collapse": "Collapse sidebar",
+"customers.filter.status": "Filter orders by status",
+"customers.filter.payment": "Filter orders by payment status",
+
+"dashboard.actions.lightMode": "Switch to light mode",
+"dashboard.actions.darkMode": "Switch to dark mode",
+
+"sidebar.darkMode": "Dark mode",
+"sidebar.lightMode": "Light mode",
+
+
+  "orders.notes.edit": "Edit note",
+  "orders.notes.delete": "Delete note",
+  "orders.notes.save": "Save changes",
+  "orders.notes.cancel": "Cancel",
+  "orders.notes.deleteConfirm": "Are you sure you want to delete this note?",
+  "orders.notes.updated": "Note updated successfully",
+  "orders.notes.deleted": "Note deleted successfully",
+
+  "orders.notes.deleting": "Deleting note...",
+  "orders.notes.confirmDelete" : "Confirm",
+
+  "orders.notes.created" : "Note created",
+  "orders.notes.createError" : "Error: note not created",
+
+  "dashboard.pdf.desktopOnly": "PDF export available on desktop only",
+
+   "dashboard.charts.categorySales": "All-Time Sales by Subcategory",
+  "dashboard.charts.categorySalesDescription": "Distribution of units sold since the beginning of sales.",
+  
+  "dashboard.subcategory": "Subcategory",
+  "products.searchPlaceholder": "Search by name or category...",
+
+  "orders.searchPlaceholder": "Search orders..."
+
+
+
+}

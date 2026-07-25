@@ -1,0 +1,31 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply transition-colors duration-300;
+  }
+
+  body {
+    @apply bg-gray-50 text-gray-900 min-h-screen transition-colors duration-300;
+    margin: 0;
+  }
+
+  .dark body {
+    @apply bg-gray-900 text-gray-100;
+  }
+
+  * {
+    @apply border-gray-200 dark:border-gray-700;
+  }
+}
+
+:root {
+  --chart-label-color: #475569; /* light mode */
+}
+
+.dark {
+  --chart-label-color: #f4f6fa; /* dark mode */
+}

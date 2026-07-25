@@ -1,0 +1,3 @@
+[submodule "macu-media"]
+	path = macu-media
+	url = https://github.com/Ringdealer/macu-media
