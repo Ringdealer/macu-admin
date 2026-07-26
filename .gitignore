@@ -47,7 +47,7 @@ postgres_data/
 # =====================
 node_modules/
 frontend-admin/.vite/
-frontend-admin/dist/
+
 
 # =====================
 # Other files
