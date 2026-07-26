@@ -78,7 +78,6 @@ The platform provides administrators with operational tools while maintaining se
 <img src="docs/demo/macu-admin-demo.gif" width="900" alt="Macu Admin demonstration">
 </p>
 
-Demo video coming soon.
 
 ---
 
