@@ -41,7 +41,8 @@ The platform provides administrators with operational tools while maintaining se
 # Table of Contents
 
 - [Highlights](#highlights)
-- [Demo](#demo)
+- [Demo](#quick-preview)
+- [Full Video](#full-video)
 - [Features](#features)
 - [Screenshots](#screenshots)
 - [Architecture](#architecture)
@@ -72,11 +73,21 @@ The platform provides administrators with operational tools while maintaining se
 
 ---
 
-# Demo
+# Quick Preview
 
 <p align="center">
 <img src="docs/demo/macu-admin-demo.gif" width="900" alt="Macu Admin demonstration">
 </p>
+
+
+---
+
+## Full Video
+
+[Watch Demo Video](https://youtu.be/3LP4ZCueYFk)
+
+<!-- Replace with your YouTube link -->
+<!-- https://youtube.com/your-demo-link -->
 
 
 ---
